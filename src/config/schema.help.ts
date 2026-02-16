@@ -117,6 +117,21 @@ export const FIELD_HELP: Record<string, string> = {
   "tools.web.fetch.firecrawl.maxAgeMs":
     "Firecrawl maxAge (ms) for cached results when supported by the API.",
   "tools.web.fetch.firecrawl.timeoutSeconds": "Timeout in seconds for Firecrawl requests.",
+  "tools.web.economicCalendar.enabled": "Enable the economic_calendar tool (default: true).",
+  "tools.web.economicCalendar.apiKey":
+    "Trading Economics API key (fallback: TRADING_ECONOMICS_API_KEY env var).",
+  "tools.web.economicCalendar.baseUrl":
+    "Trading Economics API base URL (default: https://api.tradingeconomics.com).",
+  "tools.web.economicCalendar.defaultCountry":
+    'Default country filter for economic_calendar (e.g. "united states" or "all").',
+  "tools.web.economicCalendar.defaultDaysAhead":
+    "Default lookahead days when endDate is omitted (default: 7).",
+  "tools.web.economicCalendar.maxEvents":
+    "Default maximum event rows returned by economic_calendar (default: 50, cap: 200).",
+  "tools.web.economicCalendar.timeoutSeconds":
+    "Timeout in seconds for economic_calendar requests.",
+  "tools.web.economicCalendar.cacheTtlMinutes":
+    "Cache TTL in minutes for economic_calendar results.",
   "channels.slack.allowBots":
     "Allow bot-authored messages to trigger Slack replies (default: false).",
   "channels.slack.thread.historyScope":

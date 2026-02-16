@@ -419,6 +419,24 @@ export type ToolsConfig = {
         timeoutSeconds?: number;
       };
     };
+    economicCalendar?: {
+      /** Enable economic_calendar tool (default: true). */
+      enabled?: boolean;
+      /** Trading Economics API key (optional; defaults to TRADING_ECONOMICS_API_KEY env var). */
+      apiKey?: string;
+      /** Trading Economics API base URL (default: https://api.tradingeconomics.com). */
+      baseUrl?: string;
+      /** Default country filter (e.g., "united states" or "all"). */
+      defaultCountry?: string;
+      /** Default number of days ahead when endDate is omitted (default: 7). */
+      defaultDaysAhead?: number;
+      /** Default maximum events returned per call (default: 50, cap: 200). */
+      maxEvents?: number;
+      /** Timeout in seconds for economic calendar requests. */
+      timeoutSeconds?: number;
+      /** Cache TTL in minutes for economic calendar responses. */
+      cacheTtlMinutes?: number;
+    };
   };
   media?: MediaToolsConfig;
   links?: LinkToolsConfig;

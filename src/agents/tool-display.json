@@ -304,6 +304,11 @@
       "title": "Web Fetch",
       "detailKeys": ["url", "extractMode", "maxChars"]
     },
+    "economic_calendar": {
+      "emoji": "📆",
+      "title": "Economic Calendar",
+      "detailKeys": ["country", "startDate", "endDate", "importance", "event", "maxEvents"]
+    },
     "whatsapp_login": {
       "emoji": "🟢",
       "title": "WhatsApp Login",
